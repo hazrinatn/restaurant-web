@@ -1,0 +1,275 @@
+/* Box Model Hack */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-size: 1rem;
+}
+
+section, nav {
+  padding: 0px 8rem;
+}
+
+h1 {
+  font-size: 4.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h5 {
+  color: orange;
+  margin-bottom: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+
+header {
+  height: 550px;
+  background-image: url(../img/cuisine-header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.hero-container {
+  width: 55%;
+  margin: 2rem 0px;
+}
+
+form {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.hero-container input {
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  padding-left: 1rem;
+}
+
+.hero-container button {
+  width: 20%;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: .25rem;
+  background-color: orange;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.about {
+  padding-left: 40%;
+  padding-right: 10%;
+  text-align: justify;
+  margin: 5rem 0;
+}
+
+.about > h2 {
+  margin: 0px;
+}
+
+.about > p {
+  line-height: 1.35rem;
+  margin-top: 2rem;
+}
+
+.discover{
+  background-color: orange;
+  width: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  border-radius: 5px;
+  padding-left: .6rem;
+  margin-top: 2rem;
+}
+
+.discover > a {
+  background-color: rgb(248, 185, 68);
+  height: 3rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 5px 5px 0;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.social-icons {
+  padding: 2rem 0px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.menu h2 {
+  font-size: 3.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.menu > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  position: relative;
+  margin-top: 3.5rem;
+}
+
+.menu-img {
+  margin-top: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 250px;
+}
+
+.menu-img > img {
+  width: 180px;
+  height: 210px;
+}
+/* .menu li::after{
+  content: ' ';
+  position: absolute;
+  top: 1.5rem;
+  width: 6rem;
+  height: 5px;
+  background-color: orangered;
+} */
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.booking h2 {
+  margin-bottom: 2.5rem;
+}
+
+.booking-phone {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  gap: .25rem;
+  margin-bottom: 3rem;
+}
+
+.phone-icon > img {
+  width: 4%;
+  margin: 0 auto;
+  border: 2px solid orange;
+  padding: .5rem;
+  border-radius: 50%;
+}
+
+.booking-phone p+p {
+  font-size: 1.75rem;
+  color: orange;
+}
+
+.vid > img {
+  margin-top: 3rem;
+  width: 35%;
+}
+
+.testimony {
+  text-align: center;
+}
+
+.clients {
+  margin-top: 2.5rem;
+}
+
+.clients img{
+  width: 15%;
+  border-radius: 50%;
+}
+
+
+.client-name {
+  font-size: 1.5rem;
+  margin-top: .5rem;
+}
+
+.star-icon {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star-icon > img {
+  width: 2%;
+  margin-bottom: 2rem;
+}
+
+.testimony-p {
+  font-style: italic;
+  line-height: 1.75rem;
+}
